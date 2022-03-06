@@ -18,6 +18,10 @@ const searchPhones= () =>{
 const displaySearchResult = phones=>{
     console.log(phones);
     const searchResult=document.getElementById('search-result');
+    const searchResultdtl=document.getElementById('phone-detail');
+    searchResult.innerHTML="";
+    searchResultdtl.innerHTML="";
+    document.getElementById('btn-show').style.display='none';
     if(phones.status){
         let i=1;
         phones.data.forEach(phone => {
