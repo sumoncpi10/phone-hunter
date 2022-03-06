@@ -1,5 +1,5 @@
 
-
+// Search Function
 
 const searchPhones= () =>{
     const searchField=document.getElementById('input-search');
@@ -14,6 +14,8 @@ const searchPhones= () =>{
     .then(data => displaySearchResult(data));
     // .then(data => console.log(data));
 }
+
+// Display
 
 const displaySearchResult = phones=>{
     console.log(phones);
@@ -56,6 +58,11 @@ const displaySearchResult = phones=>{
         alert("No phone Found!!");
     }
 }
+
+
+
+
+// Deail
 
 const phoneDetail= phone =>{
     console.log(phone);
